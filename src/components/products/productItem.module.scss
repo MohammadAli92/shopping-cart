@@ -1,0 +1,33 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    > img {
+        width: 100%;
+        height: auto;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    > button {
+        background-color: #F09D51;
+        width: 150px;
+        position: absolute;
+        bottom: 50px;
+        right: -152px;
+        border: none;
+        transition: all 0.5s;
+        color: black;
+        font-weight: 400;
+        font-size: 18px;
+        &:hover {
+            color: whitesmoke;
+        }
+        &:focus{
+            // border-right: none;
+        }
+    }
+    &:hover button {
+        right: 0;
+    }
+}
